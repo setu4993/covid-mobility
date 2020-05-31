@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "covid-movement"
+name = "covid-mobility"
 version = "0.1.0"
 description = ""
 authors = ["Setu Shah <setu4993@yahoo.co.in>"]
