@@ -118,7 +118,7 @@ def make_webpage():
     )
 
     st.markdown(
-        "Delhi's patterns are weird, wherein the walking take off sharply with requests ~100% higher than driving in the first week of the lockdown, but fall sharply and level off at ~50% over driving thereafter."
+        "Delhi's patterns are weird, whereby the walking requests take off sharply with requests peaking to ~100% higher than driving in the first week of the lockdown, but also fall sharply and level off at ~50% over driving thereafter."
     )
 
     st.markdown(
@@ -153,6 +153,10 @@ def make_webpage():
             color_column="region",
         )
         st.altair_chart(transportation_type_cities_plot)
+
+    st.markdown(
+        "© 2020 Setu Shah. All rights reserved. | All of my source code is on [GitHub](https://github.com/setu4993/covid-mobility) and the data is from [Apple](https://www.apple.com/covid19/mobility)."
+    )
 
 
 if __name__ == "__main__":
