@@ -2,7 +2,7 @@
 name = "covid-mobility"
 version = "0.1.0"
 description = ""
-authors = ["Setu Shah <setu4993@yahoo.co.in>"]
+authors = ["Setu Shah <setu+covid-movement@setu.me>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
