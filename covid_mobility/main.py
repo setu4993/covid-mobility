@@ -3,6 +3,7 @@ import streamlit as st
 
 from data.load import load_data
 from data.partition import partition_data
+from data.wrangle import separate_walking_driving
 from visualization.visualize import altair_chart
 
 if __name__ == "__main__":
@@ -37,3 +38,24 @@ if __name__ == "__main__":
             stroke_dash="transportation_type",
         )
         st.altair_chart(indian_city_plot)
+
+    transportation_type_cities_data = separate_walking_driving(indian_cities_plot_data)
+
+    transportation_type_cities_plot = altair_chart(
+        transportation_type_cities_data,
+        y_column="walking_driving",
+        color_column="region",
+    )
+    st.altair_chart(transportation_type_cities_plot)
+
+    if city == "All":
+        st.altair_chart(transportation_type_cities_plot)
+    else:
+        transportation_type_cities_plot = altair_chart(
+            transportation_type_cities_data[
+                transportation_type_cities_data["region"] == city
+            ],
+            y_column="walking_driving",
+            color_column="region",
+        )
+        st.altair_chart(transportation_type_cities_plot)
