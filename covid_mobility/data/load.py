@@ -10,7 +10,7 @@ from streamlit import cache
 
 @cache
 def load_data(
-    data_file: str = "./data/applemobilitytrends-2020-05-24.csv",
+    data_file: str = "./data/applemobilitytrends-2020-05-30.csv",
 ) -> pd.DataFrame:
     assert exists(data_file) and isfile(data_file)
     # Read Apple mobility data from CSV.
