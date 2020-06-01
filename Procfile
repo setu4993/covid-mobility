@@ -1,1 +1,1 @@
-web: streamlit run covid_mobility/main.py
+web: sh setup.sh && streamlit run covid_mobility/main.py
