@@ -1,9 +1,17 @@
+# Standard libraries
 from os.path import exists, isfile
-import pandas as pd
-import streamlit as st
 
-@st.cache
-def load_data(data_file: str = "./data/applemobilitytrends-2020-05-24.csv") -> pd.DataFrame:
+# Pandas
+import pandas as pd
+
+# Frameworks
+from streamlit import cache
+
+
+@cache
+def load_data(
+    data_file: str = "./data/applemobilitytrends-2020-05-24.csv",
+) -> pd.DataFrame:
     assert exists(data_file) and isfile(data_file)
     # Read Apple mobility data from CSV.
     apple_data = pd.read_csv(data_file)
