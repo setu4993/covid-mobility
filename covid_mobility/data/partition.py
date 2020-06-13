@@ -1,10 +1,8 @@
 # Pandas
-import pandas as pd
+from pandas import DataFrame
 
 
-def partition_data(
-    mobility_data: pd.DataFrame, within_region: bool = False
-) -> pd.DataFrame:
+def partition_data(mobility_data: DataFrame, within_region: bool = False) -> DataFrame:
     partitioned_data = (
         mobility_data[mobility_data["country"].str.contains("India")]
         if within_region

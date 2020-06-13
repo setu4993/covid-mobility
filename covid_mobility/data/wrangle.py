@@ -1,8 +1,8 @@
 # Pandas
-import pandas as pd
+from pandas import DataFrame
 
 
-def separate_walking_driving(source: pd.DataFrame) -> pd.DataFrame:
+def separate_walking_driving(source: DataFrame) -> DataFrame:
     walking = (
         source[source["transportation_type"] == "walking"]
         .rename(columns={"percentage": "walking"})
