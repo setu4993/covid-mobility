@@ -1,4 +1,5 @@
 # Frameworks
+# UI Frameworks
 import streamlit as st
 
 from data.load import load_data
@@ -33,7 +34,7 @@ def make_webpage():
     """
     )
 
-    st.write("With that background, let's dig in...")
+    st.markdown("With that background, let's dig in...")
 
     st.header("Movement across India")
 
@@ -82,7 +83,7 @@ def make_webpage():
     indian_cities_plot_data = partition_data(apple_data, within_region=True)
     indian_cities = indian_cities_plot_data["region"].unique()
 
-    selected_city = st.selectbox(
+    selected_city = selectbox(
         "Which city do you want to see the data for?", ["All"] + indian_cities.tolist(),
     )
     if selected_city == "All":
@@ -154,8 +155,33 @@ def make_webpage():
         )
         st.altair_chart(transportation_type_cities_plot)
 
+    st.subheader("Update (June 13, 2020)")
+
     st.markdown(
-        "© 2020 Setu Shah. All rights reserved. | All of my source code is on [GitHub](https://github.com/setu4993/covid-mobility) and the data is from [Apple](https://www.apple.com/covid19/mobility)."
+        "I just added interactive tooltips to all of the visualizations above that show the value of the Y-axis for the date hovered on. Try it!"
+    )
+
+    st.markdown(
+        "Additionally, I moved the filter to the sidebar, and updated the data to be updated to June 11, 2020, latest avaialble as I write this. As the lockdown begins to open up, I think these trends could become less interesting and return back to 'normal'. Or maybe people will voluntarily still continue to be on lockdown. We'll see..."
+    )
+
+    st.markdown(
+        """
+        A few additional notes on what I just saw from the graphs above:
+        - Walking (relative to driving) continues to go down as the lockdown progresses and the country starts to open up. This is slightly depressing.
+        - Mumbai continues to have very limited mobility, but driving dominates walking.
+        - Hyderabad appears to be moving towards pre-lockdown levels of mobility for driving and walking is reducing in relation.
+        - Most cities are back at or below the baseline walking to driving ratio, with Pune being the only exception.
+        - Pune is interesting; mobility is surely going up for both walking and driving, but at more or less the same rate, and thus maybe people continue to prefer walking to driving?
+        """
+    )
+
+    st.header("About")
+
+    st.markdown("Built and maintained by [Setu Shah](https://setu.me).")
+
+    st.markdown(
+        "© 2020 [Setu Shah](https://setu.me). All rights reserved. | All of my source code is on [GitHub](https://github.com/setu4993/covid-mobility) and the data is from [Apple](https://www.apple.com/covid19/mobility)."
     )
 
 
