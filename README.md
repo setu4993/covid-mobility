@@ -9,3 +9,5 @@ I'm playing with the COVID-19 [mobility data released by Apple](https://www.appl
 - `altair`: To plot the data.
 - `streamlit`: For the front-end.
 - `heroku`: To deploy the app to the web.
+
+Some more information about it [here](https://micro.setu.me/posts/playing-apple-covid-mobility-india/).

@@ -172,7 +172,9 @@ def make_webpage():
 
     header("About")
 
-    markdown("Built and maintained by [Setu Shah](https://setu.me).")
+    markdown(
+        "Built and maintained by [Setu Shah](https://setu.me). Some more details about it on my [micro-blog](https://micro.setu.me/posts/playing-apple-covid-mobility-india/)."
+    )
 
     markdown(
         "© 2020 [Setu Shah](https://setu.me). All rights reserved. | All of my source code is on [GitHub](https://github.com/setu4993/covid-mobility) and the data is from [Apple](https://www.apple.com/covid19/mobility)."
