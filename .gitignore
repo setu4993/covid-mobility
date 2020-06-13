@@ -3,6 +3,7 @@
 
 # Virtual environment
 .venv
+covid_mobility.egg-info
 
 # pyenv
 .python-version
