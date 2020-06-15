@@ -1,6 +1,5 @@
 # UI Frameworks
-from streamlit import altair_chart, header, markdown, subheader, title
-from streamlit.sidebar import selectbox
+from streamlit import altair_chart, header, markdown, sidebar, subheader, title
 
 from data.load import load_data
 from data.partition import partition_data
@@ -83,7 +82,7 @@ def make_webpage():
     indian_cities_plot_data = partition_data(apple_data, within_region=True)
     indian_cities = indian_cities_plot_data["region"].unique()
 
-    selected_city = selectbox(
+    selected_city = sidebar.selectbox(
         "Which city do you want to see the data for?", ["All"] + indian_cities.tolist(),
     )
     if selected_city == "All":
