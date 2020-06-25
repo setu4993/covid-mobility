@@ -8,7 +8,7 @@ from altair import Chart
 from .interactive import interactive_tooltip_chart
 
 
-def altair_chart(
+def create_chart(
     dataframe: DataFrame,
     y_column: str = "percentage",
     color_column: str = None,

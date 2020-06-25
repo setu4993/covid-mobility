@@ -4,7 +4,7 @@ from streamlit import altair_chart, header, markdown, sidebar, subheader, title
 from data.load import load_data
 from data.partition import partition_data
 from data.wrangle import separate_walking_driving
-from visualization.visualize import altair_chart
+from visualization.visualize import create_chart
 
 
 def make_webpage():
@@ -39,7 +39,7 @@ def make_webpage():
 
     subheader("Comparing daily driving and walking mobility data for India")
     india_plot_data = partition_data(apple_data)
-    india_plot = altair_chart(india_plot_data, color_column="transportation_type")
+    india_plot = create_chart(india_plot_data, color_column="transportation_type")
     altair_chart(india_plot)
 
     markdown(
@@ -56,7 +56,7 @@ def make_webpage():
 
     subheader("Relative number of walking to driving requests across India")
     transportation_type_national_data = separate_walking_driving(india_plot_data)
-    transportation_type_national_plot = altair_chart(
+    transportation_type_national_plot = create_chart(
         transportation_type_national_data, y_column="walking_driving"
     )
     altair_chart(transportation_type_national_plot)
@@ -87,7 +87,7 @@ def make_webpage():
     )
     if selected_city == "All":
         subheader("Comparing daily driving and walking mobility data for Indian cities")
-        indian_cities_plot = altair_chart(
+        indian_cities_plot = create_chart(
             indian_cities_plot_data,
             color_column="region",
             stroke_dash="transportation_type",
@@ -97,7 +97,7 @@ def make_webpage():
         subheader(
             f"Comparing daily driving and walking mobility data for {selected_city}"
         )
-        indian_city_plot = altair_chart(
+        indian_city_plot = create_chart(
             indian_cities_plot_data[indian_cities_plot_data["region"] == selected_city],
             stroke_dash="transportation_type",
         )
@@ -131,7 +131,7 @@ def make_webpage():
 
     if selected_city == "All":
         subheader("Relative number of walking to driving requests across Indian cities")
-        transportation_type_cities_plot = altair_chart(
+        transportation_type_cities_plot = create_chart(
             transportation_type_cities_data,
             y_column="walking_driving",
             color_column="region",
@@ -139,7 +139,7 @@ def make_webpage():
         altair_chart(transportation_type_cities_plot)
     else:
         subheader(f"Relative number of walking to driving requests in {selected_city}")
-        transportation_type_cities_plot = altair_chart(
+        transportation_type_cities_plot = create_chart(
             transportation_type_cities_data[
                 transportation_type_cities_data["region"] == selected_city
             ],
