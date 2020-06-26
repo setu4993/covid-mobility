@@ -855,7 +855,7 @@ description = "Frontend library for machine learning engineers"
 name = "streamlit"
 optional = false
 python-versions = ">=3.6"
-version = "0.60.0"
+version = "0.62.0"
 
 [package.dependencies]
 altair = ">=3.2.0"
@@ -876,7 +876,7 @@ pydeck = ">=0.1.dev5"
 python-dateutil = "*"
 requests = "*"
 toml = "*"
-tornado = ">=5.0,<6.0"
+tornado = ">=5.0"
 tzlocal = "*"
 validators = "*"
 watchdog = "*"
@@ -1055,7 +1055,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "65f3462d1b977cc7d0dd734ed5fffab74a2191086b7d132fa80b993f3d90c486"
+content-hash = "74cfb8648f2b0566477507195b6cb3f58d3b33a95dc35f20b1d1fcb79b3ae44b"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -1504,6 +1504,7 @@ regex = [
     {file = "regex-2020.6.8.tar.gz", hash = "sha256:e9b64e609d37438f7d6e68c2546d2cb8062f3adb27e6336bc129b51be20773ac"},
 ]
 requests = [
+    {file = "requests-2.23.0-py2.7.egg", hash = "sha256:5d2d0ffbb515f39417009a46c14256291061ac01ba8f875b90cad137de83beb4"},
     {file = "requests-2.23.0-py2.py3-none-any.whl", hash = "sha256:43999036bfa82904b6af1d99e4882b560e5e2c68e5c4b0aa03b655f3d7d73fee"},
     {file = "requests-2.23.0.tar.gz", hash = "sha256:b3f43d496c6daba4493e7c431722aeb7dbc6288f52a6e04e7b6023b0247817e6"},
 ]
@@ -1520,7 +1521,7 @@ six = [
     {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
 ]
 streamlit = [
-    {file = "streamlit-0.60.0-py2.py3-none-any.whl", hash = "sha256:2f493a40ba636507e97600e31952adbb74ad5741f9910f256d1c6c9e87082fa5"},
+    {file = "streamlit-0.62.0-py2.py3-none-any.whl", hash = "sha256:114403a3f10885979744eb4cd5d9dccd4f3f606be55dd81baf6f0b2f47e4de06"},
 ]
 terminado = [
     {file = "terminado-0.8.3-py2.py3-none-any.whl", hash = "sha256:a43dcb3e353bc680dd0783b1d9c3fc28d529f190bc54ba9a229f72fe6e7a54d7"},
