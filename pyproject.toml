@@ -13,7 +13,7 @@ streamlit = "^0.60.0"
 [tool.poetry.dev-dependencies]
 ipython = "^7.15.0"
 black = "^19.10b0"
-mypy = "^0.780"
+mypy = "^0.782"
 isort = "^4.3.21"
 autopep8 = "^1.5.3"
 
