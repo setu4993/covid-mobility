@@ -6,7 +6,7 @@ authors = ["Setu Shah <setu+covid-movement@setu.me>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-pandas = "^1.0.4"
+pandas = "^1.0.5"
 altair = "^4.1.0"
 streamlit = "^0.60.0"
 
