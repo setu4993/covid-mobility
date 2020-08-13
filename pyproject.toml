@@ -14,7 +14,7 @@ streamlit = "^0.64.0"
 ipython = "^7.17.0"
 black = "^19.10b0"
 mypy = "^0.782"
-isort = "^5.3.2"
+isort = "^5.4.0"
 autopep8 = "^1.5.4"
 
 [build-system]
