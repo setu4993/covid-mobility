@@ -865,7 +865,7 @@ description = "The fastest way to build data apps in Python"
 name = "streamlit"
 optional = false
 python-versions = ">=3.6"
-version = "0.64.0"
+version = "0.65.1"
 
 [package.dependencies]
 altair = ">=3.2.0"
@@ -1066,7 +1066,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "ae3e33c981b314d7520bb22c52ba509479e99280f83356fe79fbe4f847bf80d9"
+content-hash = "7e9501284505e2a09ba24f421688a2942328d20835559f92e247b67c04ff8c81"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -1558,7 +1558,7 @@ six = [
     {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
 ]
 streamlit = [
-    {file = "streamlit-0.64.0-py2.py3-none-any.whl", hash = "sha256:7c77a7e1252077cad8493d5f9284ff54fb8135581aba163b4afd7405eb71ed66"},
+    {file = "streamlit-0.65.1-py2.py3-none-any.whl", hash = "sha256:d29f041cddaf06421236d6707a793edd189047bcad20ee241bd0567e4da202a0"},
 ]
 terminado = [
     {file = "terminado-0.8.3-py2.py3-none-any.whl", hash = "sha256:a43dcb3e353bc680dd0783b1d9c3fc28d529f190bc54ba9a229f72fe6e7a54d7"},
