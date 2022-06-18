@@ -43,7 +43,7 @@ parso==0.7.0
 pathtools==0.1.2
 pexpect==4.8.0; python_version >= "3.4" and sys_platform != "win32" or python_version >= "3.3" and sys_platform != "win32" or sys_platform != "win32"
 pickleshare==0.7.5
-pillow==7.1.2
+pillow==9.0.1
 prometheus-client==0.8.0
 prompt-toolkit==3.0.5
 protobuf==3.12.2
