@@ -11,11 +11,10 @@ altair = "^4.2.0"
 streamlit = "^1.1.1"
 
 [tool.poetry.dev-dependencies]
-ipython = "^7.31.1"
-black = "^19.10b0"
-mypy = "^0.782"
-isort = "^5.3.2"
-autopep8 = "^1.5.4"
+ipython = "^8.4.0"
+black = "^22.6.0"
+mypy = "^0.971"
+isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry>=0.12"]
