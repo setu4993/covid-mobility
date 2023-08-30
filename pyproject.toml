@@ -11,7 +11,7 @@ altair = "^4.2.0"
 streamlit = "^1.12.2"
 
 [tool.poetry.dev-dependencies]
-ipython = "^8.4.0"
+ipython = "^8.10.0"
 black = "^22.6.0"
 mypy = "^0.971"
 isort = "^5.10.1"
