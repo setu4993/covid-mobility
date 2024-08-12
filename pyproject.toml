@@ -8,7 +8,7 @@ authors = ["Setu Shah <setu+covid-movement@setu.me>"]
 python = "^3.9.16"
 pandas = "^1.4.3"
 altair = "^4.2.0"
-streamlit = "^1.30.0"
+streamlit = "^1.37.0"
 
 [tool.poetry.dev-dependencies]
 ipython = "^8.4.0"
